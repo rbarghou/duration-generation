@@ -38,7 +38,7 @@ def duration(seconds=1.0, yields=(YIELD_IDX,)):
                 YIELD_TIME: now,
                 YIELD_ELAPSED: now - start_time,
                 YIELD_IDX: idx
-            }
+            }.items()
             if key in yields
         )
         if len(payload) == 1:
